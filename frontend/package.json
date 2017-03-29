@@ -10,6 +10,10 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
+   "pre-commit": [
+    "lint",
+    "test"
+  ],
   "private": true,
   "dependencies": {
     "@angular/common": "^4.0.0",
