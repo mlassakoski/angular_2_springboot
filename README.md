@@ -13,7 +13,7 @@ Sample Java project which integrate Angular 2 with Spring boot.
 ## Installation
 
   * Clone the project from github
-  `https://github.com/mauriciolassakoski/angular_2_springboot.git`
+  `https://github.com/mlassakoski/angular_2_springboot.git`
 
 #### Download project dependencies
 
