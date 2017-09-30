@@ -36,7 +36,7 @@ Maven dependencies
 * On root application directory execute `mvn spring-boot:run`
 
 
-## Usage (Run frontend on nodejs and backend with spring)
+## Usage (Run frontend on nodejs and backend with spring-boot)
 
 You can start the frontend by *angular-cli* using `npm start` inside frontend folder (it is recomended if you will be working only in frontend).
 The command `ng serve` will not work because frontend will be running on port 4200 and the backend will be running on port 8081.  I created a proxy file to be used by `npm start` and allow this communication.
