@@ -10,7 +10,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-   "pre-commit": [
+  "pre-commit": [
     "lint",
     "test"
   ],

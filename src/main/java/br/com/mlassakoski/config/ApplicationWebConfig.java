@@ -11,19 +11,10 @@ import org.springframework.web.servlet.resource.PathResourceResolver;
 @Configuration
 public class ApplicationWebConfig extends WebMvcConfigurerAdapter{
 
-	
-	@Override
-	public void addResourceHandlers(final ResourceHandlerRegistry registry) {
-		
-		// I mappad the location where is my html and js files
-		registry.addResourceHandler("/**").addResourceLocations("classpath:/static/index.html")
-		.resourceChain(true).addResolver(new PathResourceResolver() {
-			@Override
-			protected Resource getResource(final String resourcePath, final Resource location)
-					throws IOException {
-				return location.exists() && location.isReadable() ? location : null;
-			}
-		});
-	}
 
+	@Override
+	public void addResourceHandlers (ResourceHandlerRegistry registry) {
+		registry.addResourceHandler("/**").
+				addResourceLocations("classpath:/static/");
+	}
 }
